@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./src/css/utilities.css">
     <link rel="stylesheet" href="./src/css/components.css">
     <link rel="stylesheet" href="./src/css/sections.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
 </head>
 
 <body>
@@ -43,14 +44,52 @@
 
         <div class="page-header__bottom-bar bg-dark">
             <div class="container">
-                <nav class="page-header__nav-links text-white fw-500">
-                    <a href="#"><span>Home</span></a>
-                    <a href="#"><span>About</span></a>
-                    <a href="#"><span>Our Tours</span></a>
-                    <a href="#"><span>Gallery</span></a>
-                    <a href="#"><span>Blog</span></a>
-                    <a href="#"><span>Contact Us</span></a>
-                    <a href="#"><span>Pages</span></a>
+                <nav class="text-white fw-500">
+                    <ul class="page-header__nav-links">
+                        <li class="page-header__nav-links__item">
+                            <a href="#"><span>Home</span></a>
+                        </li>
+                        <li class="page-header__nav-links__item">
+                            <a href="#"><span>About</span></a>
+                        </li>
+                        <li class="page-header__nav-links__item">
+                            <a href="#"><span>Our Tours</span></a>
+
+                            <ul class="page-header__nav-links__sub-menu">
+                                <li>
+                                    <a href="#">Single Tours</a>
+                                </li>
+                                <li>
+                                    <a href="#">Group Tours</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="page-header__nav-links__item">
+                            <a href="#"><span>Gallery</span></a>
+                        </li>
+                        <li class="page-header__nav-links__item">
+                            <a href="#"><span>Blog</span></a>
+
+                            <ul class="page-header__nav-links__sub-menu">
+                                <li>
+                                    <a href="#">Blog 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="page-header__nav-links__item">
+                            <a href="#"><span>Contact Us</span></a>
+                        </li>
+                        <li class="page-header__nav-links__item">
+                            <a href="#"><span>Pages</span></a>
+                        </li>
+
+                    </ul>
                 </nav>
 
                 <nav class="page-header__social-links text-white">
@@ -279,7 +318,169 @@
                 </li>
             </ul>
         </section>
+
+        <section class="blogs-section bg-grey container-padding">
+            <div class="container">
+                <h2 class="fw-600 text-center">Latest Blog Posts</h2>
+
+                <ul class="blogs-list">
+                    <li class="blogs-item">
+                        <div class="blogs-item__img">
+                            <img src="./src/images/blog-1.jpg" alt="Picture of a resort with pool">
+                        </div>
+
+                        <div class="blogs-item__text-content">
+                            <a class="link-text" href="#">
+                                <h3 class="fw-600 h5">Top 10 Hotels: Rating by Wonder Tour Travel Experts</h3>
+                            </a>
+
+                            <div class="blogs-item__text-content__animation-box">
+                                <time datetime="2020-05-17" class="text-primary uppercase fw-500">May 17, 2020</time>
+
+                                <ul class="text-content__animation-box__social-links-list">
+                                    <li>
+                                        <a class="link-button" href="#">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="link-button" href="#">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="link-button" href="#">
+                                            <i class="fa-brands fa-google-plus-g"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="link-button" href="#">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="blogs-item">
+                        <div class="blogs-item__img">
+                            <img src="./src/images/blog-2.jpg" alt="Picture of a resort with pool">
+                        </div>
+
+                        <div class="blogs-item__text-content">
+                            <a class="link-text" href="#">
+                                <h3 class="fw-600 h5">Your Personal Guide to 5 Best Places to Visit on Earth</h3>
+                            </a>
+
+                            <div class="blogs-item__text-content__animation-box">
+                                <time datetime="2020-05-12" class="text-primary uppercase fw-500">May 12, 2020</time>
+
+                                <ul class="text-content__animation-box__social-links-list">
+                                    <li>
+                                        <a class="link-button" href="#">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="link-button" href="#">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="link-button" href="#">
+                                            <i class="fa-brands fa-google-plus-g"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="link-button" href="#">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="box-slider-dots">
+                    <div class="box-slider-dot active"></div>
+                    <div class="box-slider-dot"></div>
+                    <div class="box-slider-dot"></div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="bg-dark container-padding">
+        <div class="page-footer container text-white">
+            <div class="page-footer__section">
+                <h3 class="h6 fw-500">CONTACT US</h3>
+
+                <ul>
+                    <li class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <a class="link-text" href="#">+1 323-913-4688</a>
+                    </li>
+                    <li class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a class="link-text" href="#">
+                            info@demolink.org</a>
+                    </li>
+                    <li class="footer-contact-item">
+                        <i class="fa-solid fa-location-arrow"></i>
+                        <a class="link-text" href="#">4730 Crystal Springs Dr, Los Angeles, CA 90027</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="page-footer__section">
+                <h3 class="h6 fw-500">POPULAR NEWS</h3>
+
+                <ul>
+                    <li class="footer-news-item">
+                        <a class="link-text-primary" href="#">Your Personal Guide to 5 Best Places to Visit on Earth</a>
+                        <time datetime="2020-05-04">
+                            <small class="text-grey">May 04, 2020</small>
+                        </time>
+                    </li>
+                    <li class="footer-news-item">
+                        <a class="link-text-primary" href="#">Top 10 Hotels: Rating by Wonder Tour Travel Experts</a>
+                        <time datetime="2020-05-04">
+                            <small class="text-grey">May 04, 2020</small>
+                        </time>
+                    </li>
+                </ul>
+            </div>
+            <div class="page-footer__section">
+                <h3 class="h6 fw-500">QUICK LINKS</h3>
+
+                <ul class="footer-quick-links">
+                    <li class="footer-quick-links__item">
+                        <i class="fa-solid fa-circle"></i>
+                        <a class="link-text" href="#">About Us</a>
+                    </li>
+                    <li class="footer-quick-links__item">
+                        <i class="fa-solid fa-circle"></i>
+                        <a class="link-text" href="#">Our Tours</a>
+                    </li>
+                    <li class="footer-quick-links__item">
+                        <i class="fa-solid fa-circle"></i>
+                        <a class="link-text" href="#">Our Team</a>
+                    </li>
+                    <li class="footer-quick-links__item">
+                        <i class="fa-solid fa-circle"></i>
+                        <a class="link-text" href="#">Gallery</a>
+                    </li>
+                    <li class="footer-quick-links__item">
+                        <i class="fa-solid fa-circle"></i>
+                        <a class="link-text" href="#">Blog</a>
+                    </li>
+                </ul>
+
+                <button class="btn btn-primary">Get in touch</button>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

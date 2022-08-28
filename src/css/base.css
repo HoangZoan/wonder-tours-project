@@ -2,7 +2,7 @@
   --color-primary: #01b3a7;
   --color-secondary: #50ba87;
   --color-background-dark: #162e44;
-  --color-hover-dark: #275177;
+  --color-hover-dark: rgba(255, 255, 255, 0.15);
   --color-background-grey: #f7f7f7;
   --color-border-grey: #e1e1e1;
 

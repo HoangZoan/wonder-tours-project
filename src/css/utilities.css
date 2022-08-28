@@ -32,8 +32,16 @@
   font-weight: 700;
 }
 
+.text-primary {
+  color: var(--color-primary);
+}
+
 .text-white {
   color: #fff;
+}
+
+.text-grey {
+  color: rgba(255, 255, 255, 0.25);
 }
 
 /* BACKGROUND */
