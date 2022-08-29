@@ -21,30 +21,40 @@
 <body>
     <header class="page-header">
         <div class="page-header__top-bar container">
+            <button class="btn-icon btn-menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
             <img class="page-header__logo" src="./src/images/logo.png" alt="Wonder Tour Logo">
 
-            <div class="page-header__service">
-                <div class="page-header__service__item fw-500">
-                    <i class="fa-regular fa-clock"></i>
-                    <div>09:00AM - 05:00PM</div>
+            <div class="page-header__service-wrapper">
+                <div class="page-header__service">
+                    <div class="page-header__service__item fw-500">
+                        <i class="fa-regular fa-clock"></i>
+                        <div>09:00AM - 05:00PM</div>
+                    </div>
+
+                    <div class="vertical-ruler"></div>
+
+                    <div class="page-header__service__item fw-500">
+                        <i class="fa-solid fa-phone"></i>
+                        <a class="link-text" href="tel:+1 323-913-4688">+1 323-913-4688</a>
+                    </div>
                 </div>
 
-                <div class="vertical-ruler"></div>
-
-                <div class="page-header__service__item fw-500">
-                    <i class="fa-solid fa-phone"></i>
-                    <a class="link-text" href="tel:+1 323-913-4688">+1 323-913-4688</a>
-                </div>
+                <a href="#">
+                    <button class="btn btn-primary">Get a Free Quote</button>
+                </a>
             </div>
 
-            <a href="#">
-                <button class="btn btn-primary">Get a Free Quote</button>
-            </a>
+            <button class="btn-icon btn-more">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
         </div>
 
         <div class="page-header__bottom-bar bg-dark">
             <div class="container">
-                <nav class="text-white fw-500">
+                <nav class="text-white fw-500 page-header__nav">
                     <ul class="page-header__nav-links">
                         <li class="page-header__nav-links__item">
                             <a href="#"><span>Home</span></a>
@@ -481,6 +491,20 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const btnMenu = document.querySelector('.btn-menu');
+        const btnMore = document.querySelector('.btn-more');
+        const bottomBar = document.querySelector('.page-header__bottom-bar');
+        const serviceWrapper = document.querySelector('.page-header__service-wrapper');
+
+        btnMenu.addEventListener('click', () => {
+            bottomBar.classList.toggle('show');
+        });
+        btnMore.addEventListener('click', () => {
+            serviceWrapper.classList.toggle('show');
+        });
+    </script>
 </body>
 
 </html>

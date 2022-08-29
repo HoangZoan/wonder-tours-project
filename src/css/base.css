@@ -10,6 +10,9 @@
   --animate-md: 0.35s;
 
   --section-gap: 8.6rem;
+
+  --shadow-sm: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0px 3px 8px rgba(0, 0, 0, 0.15);
 }
 
 * {
