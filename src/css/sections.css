@@ -235,7 +235,7 @@
 }
 
 .hot-tours-item__info h3 {
-  padding: 2.4rem 0;
+  max-width: calc(100% - 82px);
 }
 
 .hot-tours-item__info__rating {

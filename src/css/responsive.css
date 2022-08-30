@@ -123,6 +123,7 @@
   }
 }
 
+/* Device width <= 860px */
 @media only screen and (max-width: 53.75em) {
   /* TOUR CATEGORIES SECTION */
   .tour-categories-container {
@@ -133,6 +134,8 @@
   /* HOT TOURS SECTION */
   .hot-tours-item {
     grid-template-columns: 1fr;
+    width: 80%;
+    margin: 0 auto;
   }
 
   .hot-tours-item__info {
@@ -145,5 +148,91 @@
 
   .hot-tours-item__info a {
     align-self: center;
+  }
+
+  /* BLOGS SECTION */
+  .blogs-list {
+    grid-template-columns: 0.7fr;
+    row-gap: 8.6rem;
+    justify-content: center;
+  }
+
+  .blogs-item {
+    aspect-ratio: 3 / 1;
+  }
+
+  .blogs-item .text-content__animation-box__social-links-list {
+    height: 3.2rem;
+    opacity: 1;
+  }
+
+  .blogs-item .text-content__animation-box__social-links-list a {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* PAGE FOOTER */
+  .page-footer {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3.6rem;
+  }
+}
+
+/* Device width <= 600px */
+@media only screen and (max-width: 37.5em) {
+  :root {
+    --section-gap: 6.4rem;
+  }
+
+  html {
+    font-size: 56.25%;
+  }
+
+  .page-header__bottom-bar,
+  .page-header__bottom-bar .container {
+    width: 100%;
+  }
+
+  .page-header__service-wrapper {
+    width: 100%;
+  }
+
+  .page-header__service {
+    align-items: center;
+  }
+
+  .page-header__service-wrapper a {
+    text-align: center;
+  }
+
+  .hot-tours-item__info {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+
+  .hot-tours-item {
+    width: 100%;
+  }
+
+  .blogs-list {
+    grid-template-columns: 1fr;
+  }
+
+  .blogs-item {
+    box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.15);
+  }
+
+  .blogs-item__text-content {
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    position: static;
+    transform: translate(0, 0);
+    width: 100%;
+    box-shadow: none;
+  }
+
+  /* PAGE FOOTER */
+  .page-footer {
+    grid-template-columns: 1fr;
   }
 }
