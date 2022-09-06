@@ -1,0 +1,64 @@
+:root {
+  --color-primary: #01b3a7;
+  --color-secondary: #50ba87;
+  --color-background-dark: #162e44;
+  --color-hover-dark: rgba(255, 255, 255, 0.15);
+  --color-background-grey: #f7f7f7;
+  --color-border-grey: #e1e1e1;
+
+  --animate-fast: 0.2s;
+  --animate-md: 0.35s;
+
+  --section-gap: 8.6rem;
+
+  --shadow-sm: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0px 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a button {
+  cursor: pointer;
+}
+
+figure {
+  line-height: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@keyframes expandMax {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
