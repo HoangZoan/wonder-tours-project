@@ -1,81 +1,61 @@
-/* Device width <= 1000px */
+/* Device widht <= 1000px */
 @media only screen and (max-width: 62.5em) {
-  /* PAGE HEADER SECTION */
   .page-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #fff;
-    z-index: 99;
-  }
-
-  .page-header__top-bar {
-    box-shadow: var(--shadow-sm);
+    position: relative;
   }
 
   .page-header__top-bar .btn-icon {
-    display: block;
+    display: inline-block;
   }
 
   .page-header__service-wrapper {
     position: absolute;
     bottom: 0;
     right: 0;
-    z-index: -1;
-    background-color: #fff;
     transform: translateY(100%);
-    flex-direction: column;
+    background-color: #fff;
     padding: 3.6rem 4.8rem;
-    box-shadow: var(--shadow-md);
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  .page-header__service {
     flex-direction: column;
-    align-items: flex-start;
-    margin-right: 0;
-    margin-bottom: 1.6rem;
   }
 
-  .page-header__service__item {
-    margin-bottom: 2.4rem;
+  .page-header__service-wrapper,
+  .page-header__bottom-bar {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .page-header__service-wrapper.show,
+  .page-header__bottom-bar.show {
+    visibility: visible;
+    opacity: 1;
+    transition: all var(--animate-md);
   }
 
   .vertical-ruler {
     display: none;
   }
 
-  .page-header__service-wrapper,
-  .page-header__bottom-bar {
-    transition: all var(--animate-md);
+  .page-header__service {
+    flex-direction: column;
+    margin-right: 0;
   }
 
-  .page-header__service-wrapper.show,
-  .page-header__bottom-bar.show {
-    opacity: 1;
-    visibility: visible;
+  .page-header__service__item {
+    margin-bottom: 2.4rem;
   }
 
   .page-header__bottom-bar {
-    background-color: #fff;
     position: absolute;
     bottom: 0;
     left: 0;
     transform: translateY(100%);
-    box-shadow: var(--shadow-md);
-    opacity: 0;
-    visibility: hidden;
+    background-color: #fff;
   }
 
   .page-header__bottom-bar .container {
     flex-direction: column;
-    padding: 0;
     width: 24rem;
-  }
-
-  .page-header__nav {
-    width: 100%;
+    padding: 0;
   }
 
   .page-header__nav-links {
@@ -86,38 +66,36 @@
   }
 
   .page-header__nav-links__item {
-    color: #000;
     padding: 0.8rem;
+  }
+
+  .page-header__nav-links__item:hover {
+    color: var(--color-primary);
+  }
+
+  .page-header__nav-links__sub-menu {
+    display: none;
+  }
+
+  .page-header__nav-links__item,
+  .page-header__social-links {
+    color: #000;
+  }
+
+  .page-header__social-links {
+    order: -1;
+    padding: 2.4rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    width: 100%;
+    text-align: center;
   }
 
   .page-header__nav-links__item:hover span::before {
     width: 0;
   }
 
-  .page-header__nav-links__item .page-header__nav-links__sub-menu {
-    display: none;
-  }
-
-  .page-header__social-links {
-    order: -1;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-    width: 100%;
-    text-align: center;
-    padding: 2.4rem 0;
-  }
-
-  .page-header__social-links .link-text {
-    color: #000;
-  }
-
-  .page-header__social-links .link-text:hover,
-  .page-header__nav-links__item:hover {
-    color: var(--color-primary);
-  }
-
   /* HERO SECTION */
   .hero-section {
-    margin-top: 8rem;
     display: flex;
     justify-content: center;
   }
@@ -141,7 +119,6 @@
   .hot-tours-item__info {
     padding-left: 4.8rem;
     padding-right: 4.8rem;
-    position: relative;
     display: flex;
     flex-direction: column;
   }
@@ -153,8 +130,8 @@
   /* BLOGS SECTION */
   .blogs-list {
     grid-template-columns: 0.7fr;
-    row-gap: 8.6rem;
     justify-content: center;
+    row-gap: 8.6rem;
   }
 
   .blogs-item {
@@ -162,13 +139,8 @@
   }
 
   .blogs-item .text-content__animation-box__social-links-list {
+    opacity: 1;
     height: 3.2rem;
-    opacity: 1;
-  }
-
-  .blogs-item .text-content__animation-box__social-links-list a {
-    opacity: 1;
-    transform: translateY(0);
   }
 
   /* PAGE FOOTER */
@@ -197,19 +169,6 @@
     width: 100%;
   }
 
-  .page-header__service {
-    align-items: center;
-  }
-
-  .page-header__service-wrapper a {
-    text-align: center;
-  }
-
-  .hot-tours-item__info {
-    padding-left: 2.4rem;
-    padding-right: 2.4rem;
-  }
-
   .hot-tours-item {
     width: 100%;
   }
@@ -219,15 +178,15 @@
   }
 
   .blogs-item {
-    box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 3px 12px 3px rgba(0, 0, 0, 0.15);
   }
 
   .blogs-item__text-content {
+    position: static;
+    transform: translateX(0);
+    width: 100%;
     padding-left: 1.8rem;
     padding-right: 1.8rem;
-    position: static;
-    transform: translate(0, 0);
-    width: 100%;
     box-shadow: none;
   }
 

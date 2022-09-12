@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="./src/css/responsive.css">
 </head>
 
+<!-- BEM -->
+<!-- BLOCK _ ELEMENT _ MODIFIER -->
+
 <body>
     <header class="page-header">
         <div class="page-header__top-bar container">
@@ -29,15 +32,15 @@
             <img class="page-header__logo" src="./src/images/logo.png" alt="Wonder Tour Logo">
 
             <div class="page-header__service-wrapper">
-                <div class="page-header__service">
-                    <div class="page-header__service__item fw-500">
+                <div class="page-header__service fw-500">
+                    <div class="page-header__service__item">
                         <i class="fa-regular fa-clock"></i>
                         <div>09:00AM - 05:00PM</div>
                     </div>
 
                     <div class="vertical-ruler"></div>
 
-                    <div class="page-header__service__item fw-500">
+                    <div class="page-header__service__item">
                         <i class="fa-solid fa-phone"></i>
                         <a class="link-text" href="tel:+1 323-913-4688">+1 323-913-4688</a>
                     </div>
@@ -54,8 +57,8 @@
         </div>
 
         <div class="page-header__bottom-bar bg-dark">
-            <div class="container">
-                <nav class="text-white fw-500 page-header__nav">
+            <div class="container text-white fw-500">
+                <nav class="page-header__nav">
                     <ul class="page-header__nav-links">
                         <li class="page-header__nav-links__item">
                             <a href="#"><span>Home</span></a>
@@ -68,10 +71,10 @@
 
                             <ul class="page-header__nav-links__sub-menu">
                                 <li>
-                                    <a href="#">Single Tours</a>
+                                    <a href="">Single Tours</a>
                                 </li>
                                 <li>
-                                    <a href="#">Group Tours</a>
+                                    <a href="">Group Tours</a>
                                 </li>
                             </ul>
                         </li>
@@ -83,13 +86,13 @@
 
                             <ul class="page-header__nav-links__sub-menu">
                                 <li>
-                                    <a href="#">Blog 1</a>
+                                    <a href="">Blog 1</a>
                                 </li>
                                 <li>
-                                    <a href="#">Blog 2</a>
+                                    <a href="">Blog 2</a>
                                 </li>
                                 <li>
-                                    <a href="#">Blog 3</a>
+                                    <a href="">Blog 3</a>
                                 </li>
                             </ul>
                         </li>
@@ -99,11 +102,10 @@
                         <li class="page-header__nav-links__item">
                             <a href="#"><span>Pages</span></a>
                         </li>
-
                     </ul>
                 </nav>
 
-                <nav class="page-header__social-links text-white">
+                <nav class="page-header__social-links">
                     <a class="link-text" href="#">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
@@ -124,8 +126,9 @@
     <main>
         <section class="hero-section">
             <div class="hero-content container text-white">
-                <h6 class="uppercase fw-500">A team of professional Travel Experts</h6>
+                <h6 class="fw-500 uppercase">A team of professional travel experts</h6>
                 <h1>Trust <span class="fw-700">Our Experience</span></h1>
+
                 <a href="#">
                     <button class="btn btn-secondary">Get in touch</button>
                 </a>
@@ -136,7 +139,7 @@
             <div class="tour-categories-container container">
                 <a class="tour-category" href="#">
                     <figure>
-                        <img src="./src/images/tour-cat-1.jpg" alt="Ballon flights">
+                        <img src="./src/images/tour-cat-1.jpg" alt="Ballon Flights">
                         <figcaption>
                             <h5 class="fw-700">Ballon Flights</h5>
                         </figcaption>
@@ -144,17 +147,17 @@
                 </a>
                 <a class="tour-category" href="#">
                     <figure>
-                        <img src="./src/images/tour-cat-2.jpg" alt="Moutain Holiday">
+                        <img src="./src/images/tour-cat-2.jpg" alt="Mountain Holiday">
                         <figcaption>
-                            <h5 class="fw-700">Moutain Holiday</h5>
+                            <h5 class="fw-700">Mountain Holiday</h5>
                         </figcaption>
                     </figure>
                 </a>
                 <a class="tour-category" href="#">
                     <figure>
-                        <img src="./src/images/tour-cat-3.jpg" alt="Beach Holidays">
+                        <img src="./src/images/tour-cat-3.jpg" alt="Beach Holiday">
                         <figcaption>
-                            <h5 class="fw-700">Beach Holidays</h5>
+                            <h5 class="fw-700">Beach Holiday</h5>
                         </figcaption>
                     </figure>
                 </a>
@@ -185,7 +188,7 @@
                     <div class="achievements-item__content content-center flex-column">
                         <div class="achievements-item__content__number">
                             <i class="fa-solid fa-face-smile-wink"></i>
-                            <h3 class="fw-700">500+</h3>
+                            <h3 class="fw-700">+500</h3>
                         </div>
                         <h5 class="fw-500">Happy Travelers</h5>
                     </div>
@@ -208,7 +211,7 @@
             <ul class="container">
                 <li class="hot-tours-item bg-white">
                     <div class="hot-tours-item__image">
-                        <img src="./src/images/hot-tour-1.jpg" alt="Benidorm Beach">
+                        <img src="./src/images/hot-tour-1.jpg" alt="Spain, Benidorm">
                     </div>
 
                     <div class="hot-tours-item__info">
@@ -217,7 +220,7 @@
                             <div class="white-corner"></div>
                         </h5>
 
-                        <h3 class=" fw-600 h5">Spain, Benidorm</h3>
+                        <h3 class="fw-600 h5">Spain, Benidorm</h3>
                         <div class="hot-tours-item__info__rating">
                             <div class="info__rating__stars">
                                 <i class="fa-solid fa-star"></i>
@@ -230,8 +233,12 @@
                                 <small>4 reviews</small>
                             </a>
                         </div>
+
+
                         <p>Benidorm is a buzzing resort with a big reputation for beach holidays. Situated in sunny
-                            Costa Blanca, the town is one of the original Spanish beach resorts...</p>
+                            Costa
+                            Blanca, the town is one of the original Spanish beach resorts...</p>
+
                         <a href="#">
                             <button class="btn btn-primary">Book Now</button>
                         </a>
@@ -271,7 +278,7 @@
             </ul>
         </section>
 
-        <section class="team-members-section container-padding container">
+        <section class="team-members-section container container-padding">
             <h2 class="fw-600 text-center">Different People - One Mission</h2>
 
             <ul class="team-member-list">
@@ -335,7 +342,7 @@
                 <h2 class="fw-600 text-center">Latest Blog Posts</h2>
 
                 <ul class="blogs-list">
-                    <li class="blogs-item">
+                    <li class="blogs-item text-center">
                         <div class="blogs-item__img">
                             <img src="./src/images/blog-1.jpg" alt="Picture of a resort with pool">
                         </div>
@@ -346,7 +353,7 @@
                             </a>
 
                             <div class="blogs-item__text-content__animation-box">
-                                <time datetime="2020-05-17" class="text-primary uppercase fw-500">May 17, 2020</time>
+                                <time datetime="2020-05-17" class="text-primary uppercase fw-500">MAY 17, 2020</time>
 
                                 <ul class="text-content__animation-box__social-links-list">
                                     <li>
@@ -371,10 +378,9 @@
                                     </li>
                                 </ul>
                             </div>
-
                         </div>
                     </li>
-                    <li class="blogs-item">
+                    <li class="blogs-item text-center">
                         <div class="blogs-item__img">
                             <img src="./src/images/blog-2.jpg" alt="Picture of a resort with pool">
                         </div>
@@ -413,12 +419,12 @@
                         </div>
                     </li>
                 </ul>
+            </div>
 
-                <div class="box-slider-dots">
-                    <div class="box-slider-dot active"></div>
-                    <div class="box-slider-dot"></div>
-                    <div class="box-slider-dot"></div>
-                </div>
+            <div class="box-slider-dots">
+                <div class="box-slider-dot active"></div>
+                <div class="box-slider-dot"></div>
+                <div class="box-slider-dot"></div>
             </div>
         </section>
     </main>
@@ -431,12 +437,11 @@
                 <ul>
                     <li class="footer-contact-item">
                         <i class="fa-solid fa-phone"></i>
-                        <a class="link-text" href="#">+1 323-913-4688</a>
+                        <a class="link-text" href="tel:+1 323-913-4688">+1 323-913-4688</a>
                     </li>
                     <li class="footer-contact-item">
                         <i class="fa-solid fa-envelope"></i>
-                        <a class="link-text" href="#">
-                            info@demolink.org</a>
+                        <a class="link-text" href="mailto:info@demolink.org">info@demolink.org</a>
                     </li>
                     <li class="footer-contact-item">
                         <i class="fa-solid fa-location-arrow"></i>
@@ -444,6 +449,7 @@
                     </li>
                 </ul>
             </div>
+
             <div class="page-footer__section">
                 <h3 class="h6 fw-500">POPULAR NEWS</h3>
 
@@ -462,6 +468,7 @@
                     </li>
                 </ul>
             </div>
+
             <div class="page-footer__section">
                 <h3 class="h6 fw-500">QUICK LINKS</h3>
 
@@ -494,10 +501,10 @@
     </footer>
 
     <script>
-        const btnMenu = document.querySelector('.btn-menu');
-        const btnMore = document.querySelector('.btn-more');
-        const bottomBar = document.querySelector('.page-header__bottom-bar');
-        const serviceWrapper = document.querySelector('.page-header__service-wrapper');
+        const btnMenu = document.querySelector('.btn-menu')
+        const btnMore = document.querySelector('.btn-more')
+        const bottomBar = document.querySelector('.page-header__bottom-bar')
+        const serviceWrapper = document.querySelector('.page-header__service-wrapper')
 
         btnMenu.addEventListener('click', () => {
             bottomBar.classList.toggle('show');
